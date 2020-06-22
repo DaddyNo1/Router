@@ -1,0 +1,24 @@
+apply plugin:'groovy'
+
+// 由于buildSrc 的执行早于任何一个 Project,因此需要自己添加仓库
+repositories {
+    google()
+    jcenter()
+}
+
+dependencies {
+    //Creates a dependency on the Groovy that is distributed with the current version of Gradle.
+    implementation localGroovy()
+
+    //Creates a dependency on the API of the current version of Gradle.
+    implementation gradleApi()
+
+    //访问 google 给安卓写的那些插件
+    implementation 'com.android.tools.build:gradle:3.6.3'
+
+    implementation 'org.javassist:javassist:3.20.0-GA'
+
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"

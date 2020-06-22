@@ -1,0 +1,7 @@
+rootProject.name='APTDemo'
+include ':app'
+include ':router'
+include ':test'
+include ':router-compiler'
+include ':router-annotation'
+include ':buildSrc'

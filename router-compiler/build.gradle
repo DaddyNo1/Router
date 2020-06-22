@@ -1,0 +1,22 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //辅助注册  注解处理器
+    implementation 'com.google.auto.service:auto-service:1.0-rc6'
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc6'
+
+    //生成 java 源文件
+    implementation 'com.squareup:javapoet:1.12.1'
+
+    //相关 Java Utils 类库
+    implementation 'org.apache.commons:commons-lang3:3.5'
+    implementation 'org.apache.commons:commons-collections4:4.1'
+
+    implementation project(path: ":router-annotation")
+
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"

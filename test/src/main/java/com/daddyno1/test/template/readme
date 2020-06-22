@@ -1,0 +1,26 @@
+这里事先定义一些模板类，通过这些模板类找到相关规律，然后再使用
+apt 去生成。
+
+public class Router$$Root$$test implements IRouteRoot {
+    @Override
+    public void loadInto(Map<String, Class<? extends IRouteGroup>> routeGroups) {
+        routeGroups.put("group3", Router$$Group$$group3.class);
+        routeGroups.put("group4", Router$$Group$$group4.class);
+    }
+}
+
+
+public class Router$$Group$$group3 implements IRouteGroup {
+    @Override
+    public void loadInto(Map<String, RouteMeta> routes) {
+        routes.put("/group3/login", RouteMeta.build(LoginActivity.class, "/group3/login", "group3"));
+    }
+}
+
+
+public class Router$$Group$$group4 implements IRouteGroup {
+    @Override
+    public void loadInto(Map<String, RouteMeta> routes) {
+        routes.put("/group4/login", RouteMeta.build(RegisterActivity.class, "/group4/login", "group4"));
+    }
+}

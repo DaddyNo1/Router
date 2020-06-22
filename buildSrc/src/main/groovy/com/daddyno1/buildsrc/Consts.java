@@ -1,11 +1,5 @@
 package com.daddyno1.buildsrc;
 
-/**
- * <p>Description  : Consts</p>
- * <p>Author       : jxf</p>
- * <p>Date         : 2020/6/19</p>
- * <p>Time         : 2:31 PM</p>
- */
 public class Consts {
 
     public final static String PREFIX = "Router$$Root$$";

@@ -14,7 +14,8 @@ class RouterPlugin implements Plugin<Project>{
 
         def appExtension = project.extensions.findByType(AppExtension.class)
         // 创建Transform
-        appExtension.registerTransform(new RouterTransform(project))
+//        appExtension.registerTransform(new RouterTransform(project))
+        appExtension.registerTransform(new NewRouterTransform(project: project))
 
     }
 }

@@ -3,6 +3,7 @@ package com.daddyno1.buildsrc
 
 import com.android.build.gradle.AppExtension
 import com.android.build.gradle.AppPlugin
+import com.android.build.gradle.LibraryExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 

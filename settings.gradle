@@ -4,4 +4,4 @@ include ':router'
 include ':test'
 include ':router-compiler'
 include ':router-annotation'
-include ':buildSrc'
+//include ':buildSrc'   // androidStudio 4.1 && gradle 6.1.1 buildSrc 是保留module

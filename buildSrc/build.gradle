@@ -14,7 +14,7 @@ dependencies {
     implementation gradleApi()
 
     //访问 google 给安卓写的那些插件
-    implementation 'com.android.tools.build:gradle:3.6.3'
+    implementation 'com.android.tools.build:gradle:4.0.1'
 
     implementation 'org.javassist:javassist:3.20.0-GA'
 
